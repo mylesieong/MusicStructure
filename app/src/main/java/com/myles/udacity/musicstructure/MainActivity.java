@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button_favorite).setOnClickListener(new OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent favoriteIntent = new Intent(MainActivity.this, FavoriteActivity.class);
-                startActivity(favoriteIntent);
+                startActivity(new Intent(MainActivity.this, FavoriteActivity.class));
                 Log.v("MainActivity","Invoke favorite activity");
             }
         });
@@ -27,9 +26,32 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button_download).setOnClickListener(new OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent downloadIntent = new Intent(MainActivity.this, DownloadActivity.class);
-                startActivity(downloadIntent);
+                startActivity(new Intent(MainActivity.this, DownloadActivity.class));
                 Log.v("MainActivity","Invoke download activity");
+            }
+        });
+
+        findViewById(R.id.button_mymusic).setOnClickListener(new OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MyMusicActivity.class));
+                Log.v("MainActivity","Invoke mymusic activity");
+            }
+        });
+
+        findViewById(R.id.button_scan).setOnClickListener(new OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ScanActivity.class));
+                Log.v("MainActivity","Invoke scan activity");
+            }
+        });
+
+        findViewById(R.id.panel_nowplaying).setOnClickListener(new OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, NowPlayingActivity.class));
+                Log.v("MainActivity","Invoke now playing activity");
             }
         });
     }

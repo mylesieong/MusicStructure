@@ -9,6 +9,7 @@
     <string name="text_download_activity">In Download Page, we will use RecyclerView to list out all previous download record user had made. And when user clicks any of the items, the activity will create an intent with the music URI to the now playing activity and play it right the way.</string>
     <string name="text_favorite_activity">In Favorite Page, we will use RecyclerView to list out all song or audio previously marked as favorite. And when user clicks any of the items, the activity will create an intent with the music URI to the now playing activity and play it right the way.</string>
     <string name="text_mymusic_activity">In My Music Page, we will use RecyclerView to list out all user\'s music. And when user clicks any of the items, the activity will create an intent with the music URI to the now playing activity and play it right the way.</string>
-
+    <string name="text_scan_activity">In Scan Page, we will have s button for user to press and start the scanning. And below the scan start button we will use RecyclerView to list out all scan results. User can choose to add, to delete or to play the music or audio item listed.</string>
+    <string name="text_nowplaying_activity">In now playing activity, we show the album picture on the screen and a control bar of music player below the picture.</string>
 
 </resources>
